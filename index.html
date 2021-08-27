@@ -402,13 +402,7 @@
       </div>
     </div>
     <script>
-        function setLocation(gosuslugi){
-        try {
-        history.pushState(null, null, gosuslugi);
-        return;
-        } catch(e) {}
-        location.hash = '#' + gosuslugi;
-        }
+      window.history.pushState(null, null, "/gosuslugi");
     </script>
     </body>
 </html>
