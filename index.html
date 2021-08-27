@@ -325,7 +325,7 @@
                 <path opacity="0.15" d="M288.194 125.299C288.483 125.557 288.782 125.823 289.09 126.099C289.092 126.101 289.094 126.103 289.096 126.105L290.119 127.001C290.256 127.121 290.426 127.181 290.596 127.181C290.766 127.181 290.936 127.121 291.073 127.001L292.096 126.105C292.098 126.103 292.1 126.101 292.102 126.099C294.127 124.283 295.645 122.892 296.743 121.536C298.026 119.952 298.623 118.52 298.623 117.029C298.623 114.332 296.54 112.219 293.881 112.219C292.686 112.219 291.505 112.675 290.596 113.467C289.687 112.675 288.506 112.219 287.311 112.219C284.651 112.219 282.568 114.332 282.568 117.029C282.568 120.29 284.806 122.283 288.194 125.299ZM287.676 118.219H289.623V116.245H291.569V118.219H293.516V120.194H291.569V122.168H289.623V120.194H287.676V118.219Z" fill="white"></path>
               </g>
             </svg>
-    
+
           </div>
           <div class="normal-image status-container-image">
             <svg width="350" height="172" viewBox="0 0 350 172" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -370,7 +370,7 @@
             <h4 class="title-h4 white status-title mt-12"><span class="num-symbol">№</span> <span class="unrz">9520 0000 2083 6371</span></h4>
           </div>
         </div>
-    
+
         <div class="person-data person-data-dates mt-20">
                     <div class="mb-4 person-data-wrap align-items-center">
                       <div class="person-date mr-12">
@@ -392,14 +392,23 @@
                       <div class="small-text gray">23.06.2022</div>
                     </div>
                 </div>
-    
+
         <div class="person-data person-data-attrs mt-24"><div class="mb-4 person-data-wrap attr-wrap"><div class="small-text mb-4 mr-4 attr-title hide">ФИО: </div><div class="attrValue title-h6 bold text-center">С****** Е****** А************</div></div><div class="mb-4 person-data-wrap attr-wrap"><div class="small-text mb-4 mr-4 attr-title">Дата рождения: </div><div class="attrValue small-text gray">30.12.1982</div></div><div class="mb-4 person-data-wrap attr-wrap"><div class="small-text mb-4 mr-4 attr-title">Паспорт: </div><div class="attrValue small-text gray">22** ***501</div></div><div class="mb-4 person-data-wrap attr-wrap hide"><div class="small-text mb-4 mr-4 attr-title">Загранпаспорт: </div><div class="attrValue small-text gray">7* ****427</div></div></div>
-    
+
         <div class="mt-24">
           <a href="https://www.gosuslugi.ru/" class="button">Закрыть</a>
         </div>
-    
+
       </div>
     </div>
+    <script>
+        function setLocation(gosuslugi){
+        try {
+        history.pushState(null, null, gosuslugi);
+        return;
+        } catch(e) {}
+        location.hash = '#' + gosuslugi;
+        }
+    </script>
     </body>
 </html>
